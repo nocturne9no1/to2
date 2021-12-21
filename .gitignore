@@ -246,3 +246,6 @@ pip-selfcheck.json
 !.vscode/*.code-snippets
 
 # End of https://www.toptal.com/developers/gitignore/api/venv,django,python,visualstudiocode
+
+# secret_key
+SECRETS.json
