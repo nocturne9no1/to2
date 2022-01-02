@@ -19,13 +19,13 @@ total = len(problem_data)
 counter = 0
 
 def write_buffer():
-    json_file1 = "boj_problem_data.json"
+    json_file1 = "boj_problem_data_2.json"
     with open(json_file1, 'w', encoding='UTF-8-sig') as outfile:
         json.dump(result, outfile, ensure_ascii=False)
         outfile.flush()
         outfile.close()
 
-    json_file2 = "boj_problem_data_check.json"
+    json_file2 = "boj_problem_data_check_2.json"
     with open(json_file2, 'w', encoding='UTF-8-sig') as outfile:
         json.dump(for_check, outfile, ensure_ascii=False)
         outfile.flush()
@@ -36,7 +36,7 @@ def write_buffer():
     print('----')
     print(len(problem_data))
 
-for i in range(len(problem_data)):
+for i in range(5451,10901):
     
     query = problem_data[i]
     url = 'https://solved.ac/api/v3/search/problem/'
