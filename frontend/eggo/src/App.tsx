@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          For Slack connet Test
+          For Slack connet Test - 2
         </a>
       </header>
     </div>
