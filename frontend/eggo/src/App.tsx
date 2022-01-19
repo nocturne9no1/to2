@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Le arn test
+          For Slack connet Test
         </a>
       </header>
     </div>
