@@ -1,26 +1,16 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import { Home, Test } from "./views";
+import { Navigate, Route, Routes } from "react-router";
 
-function App() {
+const App: React.FC = (): JSX.Element => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          For Slack connet Test - 4
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/test" element={<Test />} />
+      <Route path="*" element={<Navigate replace to="/" />} />
+    </Routes>
   );
-}
+};
 
 export default App;
