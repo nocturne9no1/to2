@@ -22,7 +22,7 @@
     top: 0;
     bottom: 0;
     border-radius: 5px;
-    background-color: aquamarine;
+    background-color: gray;
   }
 
   .range {
@@ -69,4 +69,21 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: red;
   cursor: pointer;
   -webkit-appearance: none;
+}
+
+.slider-label {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  .label {
+    // position: absolute;
+    .divider {
+      position: absolute;
+      top: -35%;
+      z-index: 1;
+      width: 10px;
+      height: 30px;
+      background-color: blue;
+    }
+  }
 }
