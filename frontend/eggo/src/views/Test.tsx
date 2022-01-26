@@ -69,7 +69,7 @@ const Test: React.FC = (): JSX.Element => {
           <div className="thumb left" style={{ left: thumb.left }}></div>
           <div className="thumb right" style={{ right: thumb.right }}></div>
         </div>
-        <div className="slider-label">
+        {/* <div className="slider-label">
           <div className="label bronze">
             <p>Bronze</p>
           </div>
@@ -88,6 +88,28 @@ const Test: React.FC = (): JSX.Element => {
           <div className="label diamond">
             <div className="divider"></div>
             <p>Diamond</p>
+          </div>
+          <div className="label ruby">
+            <p>Ruby</p>
+          </div>
+        </div> */}
+        <div className="slider-label">
+          <div className="label bronze">
+            <p>Bronze</p>
+          </div>
+          <div className="middle">
+            <div className="middle-area">
+              <p>Silver</p>
+            </div>
+            <div className="middle-area">
+              <p>Gold</p>
+            </div>
+            <div className="middle-area">
+              <p>Platinum</p>
+            </div>
+            <div className="middle-area">
+              <p>Diamond</p>
+            </div>
           </div>
           <div className="label ruby">
             <p>Ruby</p>
